@@ -6,11 +6,62 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C122CE932F67C8A900CBF959 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C122CE922F67C8A900CBF959 /* WidgetKit.framework */; };
+		C122CE952F67C8A900CBF959 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C122CE942F67C8A900CBF959 /* SwiftUI.framework */; };
+		C122CEA62F67C8AA00CBF959 /* IslandExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C122CE902F67C8A900CBF959 /* IslandExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C122CEA42F67C8AA00CBF959 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1C10EC02F67AE3F0094DAD1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C122CE8F2F67C8A900CBF959;
+			remoteInfo = IslandExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C122CEAB2F67C8AA00CBF959 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C122CEA62F67C8AA00CBF959 /* IslandExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		C122CE902F67C8A900CBF959 /* IslandExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = IslandExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C122CE922F67C8A900CBF959 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		C122CE942F67C8A900CBF959 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		C1C10EC82F67AE400094DAD1 /* Clara.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clara.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		C122CEA72F67C8AA00CBF959 /* Exceptions for "Island" folder in "IslandExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = C122CE8F2F67C8A900CBF959 /* IslandExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		C122CE962F67C8A900CBF959 /* Island */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C122CEA72F67C8AA00CBF959 /* Exceptions for "Island" folder in "IslandExtension" target */,
+			);
+			path = Island;
+			sourceTree = "<group>";
+		};
 		C1C10ECA2F67AE400094DAD1 /* Clara */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Clara;
@@ -19,6 +70,15 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C122CE8D2F67C8A900CBF959 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C122CE952F67C8A900CBF959 /* SwiftUI.framework in Frameworks */,
+				C122CE932F67C8A900CBF959 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C1C10EC52F67AE3F0094DAD1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -29,10 +89,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C122CE912F67C8A900CBF959 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C122CE922F67C8A900CBF959 /* WidgetKit.framework */,
+				C122CE942F67C8A900CBF959 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C1C10EBF2F67AE3F0094DAD1 = {
 			isa = PBXGroup;
 			children = (
 				C1C10ECA2F67AE400094DAD1 /* Clara */,
+				C122CE962F67C8A900CBF959 /* Island */,
+				C122CE912F67C8A900CBF959 /* Frameworks */,
 				C1C10EC92F67AE400094DAD1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				C1C10EC82F67AE400094DAD1 /* Clara.app */,
+				C122CE902F67C8A900CBF959 /* IslandExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,6 +120,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		C122CE8F2F67C8A900CBF959 /* IslandExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C122CEA82F67C8AA00CBF959 /* Build configuration list for PBXNativeTarget "IslandExtension" */;
+			buildPhases = (
+				C122CE8C2F67C8A900CBF959 /* Sources */,
+				C122CE8D2F67C8A900CBF959 /* Frameworks */,
+				C122CE8E2F67C8A900CBF959 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				C122CE962F67C8A900CBF959 /* Island */,
+			);
+			name = IslandExtension;
+			packageProductDependencies = (
+			);
+			productName = IslandExtension;
+			productReference = C122CE902F67C8A900CBF959 /* IslandExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		C1C10EC72F67AE3F0094DAD1 /* Clara */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C1C10ED52F67AE410094DAD1 /* Build configuration list for PBXNativeTarget "Clara" */;
@@ -55,10 +149,12 @@
 				C1C10EC42F67AE3F0094DAD1 /* Sources */,
 				C1C10EC52F67AE3F0094DAD1 /* Frameworks */,
 				C1C10EC62F67AE3F0094DAD1 /* Resources */,
+				C122CEAB2F67C8AA00CBF959 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C122CEA52F67C8AA00CBF959 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				C1C10ECA2F67AE400094DAD1 /* Clara */,
@@ -80,6 +176,9 @@
 				LastSwiftUpdateCheck = 2610;
 				LastUpgradeCheck = 2610;
 				TargetAttributes = {
+					C122CE8F2F67C8A900CBF959 = {
+						CreatedOnToolsVersion = 26.1;
+					};
 					C1C10EC72F67AE3F0094DAD1 = {
 						CreatedOnToolsVersion = 26.1;
 					};
@@ -100,11 +199,19 @@
 			projectRoot = "";
 			targets = (
 				C1C10EC72F67AE3F0094DAD1 /* Clara */,
+				C122CE8F2F67C8A900CBF959 /* IslandExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		C122CE8E2F67C8A900CBF959 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C1C10EC62F67AE3F0094DAD1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -115,6 +222,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		C122CE8C2F67C8A900CBF959 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C1C10EC42F67AE3F0094DAD1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -124,7 +238,75 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		C122CEA52F67C8AA00CBF959 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C122CE8F2F67C8A900CBF959 /* IslandExtension */;
+			targetProxy = C122CEA42F67C8AA00CBF959 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		C122CEA92F67C8AA00CBF959 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B92U934M47;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Island/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Island;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = alventur.Clara.Island;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C122CEAA2F67C8AA00CBF959 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B92U934M47;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Island/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Island;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = alventur.Clara.Island;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		C1C10ED32F67AE410094DAD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -256,6 +438,9 @@
 				DEVELOPMENT_TEAM = B92U934M47;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Clara needs your microphone to analyze your pitch and pacing.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Clara uses speech recognition to analyze your filler words, pauses, and speech patterns.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -288,6 +473,9 @@
 				DEVELOPMENT_TEAM = B92U934M47;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Clara needs your microphone to analyze your pitch and pacing.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Clara uses speech recognition to analyze your filler words, pauses, and speech patterns.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -313,6 +501,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C122CEA82F67C8AA00CBF959 /* Build configuration list for PBXNativeTarget "IslandExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C122CEA92F67C8AA00CBF959 /* Debug */,
+				C122CEAA2F67C8AA00CBF959 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C1C10EC32F67AE3F0094DAD1 /* Build configuration list for PBXProject "Clara" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -10,9 +10,12 @@ import SwiftData
 
 @main
 struct ClaraApp: App {
+    @UIApplicationDelegateAdaptor(ClaraAppDelegate.self) var appDelegate
+    
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Item.self,
+            VoiceSession.self,
+            SessionMetrics.self
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
